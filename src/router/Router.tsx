@@ -4,6 +4,8 @@ import { About } from "../pages/About.tsx";
 import { ErrorRoute } from "../pages/Error.tsx";
 import { Layout } from "../components/Misc/Layout.tsx";
 import Register from "../pages/Auths/Register.tsx";
+import Testimony from "../pages/Testimony.tsx";
+import Faq from  "../pages/Info/Faq.tsx"
 
 const router = createBrowserRouter([
   {
@@ -14,15 +16,23 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Register />,
-      },
-      {
-        path: "/home",
         element: <Home />,
       },
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/testimonies",
+        element: <Testimony />,
+      },
+      {
+        path: "/auth/",
+        element: <Register />,
+      },
+      {
+        path: "/info/faq",
+        element: <Faq />,
       },
     ],
   },

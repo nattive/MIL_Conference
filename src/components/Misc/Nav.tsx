@@ -1,48 +1,43 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { CgProfile } from "react-icons/cg";
-import { BsPeople } from "react-icons/bs";
-import { GiHand } from "react-icons/gi";
+import { SIDEBAR_LINK } from "./all";
 import { SideBarNavProps } from "../../..";
 
-export const SideBarNav = ({ liStyle, style, scrolled }: SideBarNavProps) => {
-  return (
-    <div className="">
-      <ul className={` ${style}`}>
-        <li>
-          <Link
-            to="/about"
-            className={`  ${
-              scrolled ? "text-black" : " text-white"
-            }  ${liStyle} flex items-center  opacity-70 hover:opacity-100 duration-300 font-light`}
-          >
-            <BsPeople className="mr-2" />
-            <p>ABOUT</p>
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            className={` ${
-              scrolled ? "text-black" : " text-white"
-            }  ${liStyle} flex items-center  opacity-70 hover:opacity-100 duration-300 font-light`}
-          >
-            <CgProfile className="mr-2" />
-            <p>CONTACT US</p>
-          </Link>
-        </li>
+export const SideBarNav: React.FC<SideBarNavProps> = ({ style, scrolled }) => {
+  const [showSubNav, setShowSubNav] = useState(false);
 
-        <li>
-          <Link
-            to="/give"
-            className={` ${
-              scrolled ? "text-black" : " text-white"
-            }  ${liStyle} flex   opacity-70 hover:opacity-100 duration-300 font-light `}
-          >
-            <GiHand className="mr-2" />
-            GIVE
-          </Link>
-        </li>
-      </ul>
-    </div>
+  const toggleSubNav = () => {
+    setShowSubNav(!showSubNav);
+  };
+
+  return (
+    <>
+      {SIDEBAR_LINK.map((item, index: number) => (
+        <ul className={`${style}`} key={index}>
+          {Object.entries(item).map(([key, value]) => (
+            <div
+              className="flex items-center justify-between px-4 py-4 hover:bg-gray-200"
+              key={key}
+            >
+              {key !== "hasChild" ? (
+                <Link
+                  to={`${value}`}
+                  className={`${scrolled ? "text-black" : "text-black"}`}
+                >
+                  <span
+                    className="block md:py-0 md:hover:bg-transparent nav_link md:text-xs text-gray-600 hover:text-gray-800 active:border-b border-gray-600"
+                    onClick={toggleSubNav}
+                  >
+                    {key}
+                  </span>
+                </Link>
+              ) : (
+                <span className="cursor-pointer md:hidden">icon</span>
+              )}
+            </div>
+          ))}
+        </ul>
+      ))}
+    </>
   );
 };

@@ -1,9 +1,8 @@
 import { createContext } from "react";
 
+type SideBarProps = {
+  Open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
- type SideBarProps  = { 
-    Open: boolean
-    setOpen :  any
-}
-
-export const SideBarContext = createContext( {} as  SideBarProps)
+export const SideBarContext = createContext({} as SideBarProps);
