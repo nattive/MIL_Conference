@@ -5,7 +5,8 @@ import { ErrorRoute } from "../pages/Error.tsx";
 import { Layout } from "../components/Misc/Layout.tsx";
 import Register from "../pages/Auths/Register.tsx";
 import Testimony from "../pages/Testimony.tsx";
-import Faq from  "../pages/Info/Faq.tsx"
+import Faq from "../pages/Info/Faq.tsx";
+import Ministers from "../pages/Ministers.tsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/testimonies",
         element: <Testimony />,
+      },
+      {
+        path: "/ministers",
+        element: <Ministers />,
       },
       {
         path: "/auth/",

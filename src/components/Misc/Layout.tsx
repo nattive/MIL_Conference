@@ -8,7 +8,7 @@ export const Layout = () => {
     <>
       <Header ShowHeader={true} />
       <Sidebar />
-      <div className="mt-20 md:px-10 bg-white">
+      <div className="mt-20 md:px-10">
         <Outlet />
       </div>
       <Footer />

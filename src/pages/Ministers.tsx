@@ -1,9 +1,12 @@
-import React from 'react'
+import MinistersList from "../components/Ministers/MinistersList";
 
 const Ministers = () => {
+ 
   return (
-    <div>Ministers</div>
-  )
-}
+    <div className="mx-auto">
+      <MinistersList />
+    </div>
+  );
+};
 
-export default Ministers
+export default Ministers;
