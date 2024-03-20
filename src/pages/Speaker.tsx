@@ -9,7 +9,7 @@ const Speaker: React.FC = () => {
           <div className="container">
             <a
               href="/#speakers"
-              className="text-black flex  items-center  space-x-2 group hover:shadow-md bg-white border border-gray-500 rounded-md w-fit px-2 py-1 hover:text-black "
+              className="text-black mb-8 flex  items-center  space-x-2 group hover:shadow-md bg-white border border-gray-500 rounded-md w-fit px-2 py-1 hover:text-black "
             >
               <BsArrowReturnLeft className="group-hover:font-bold" />
               <span className="">BACK</span>
