@@ -45,7 +45,7 @@ export default function Header({ ShowHeader }: HeaderProps) {
             {/* logo here*/}
             <Link className="block md:flex-1" to="/">
               <img
-                src="./assets/logo.icon"
+                src="/assets/logo.png"
                 height="100"
                 width="100"
                 alt="image "

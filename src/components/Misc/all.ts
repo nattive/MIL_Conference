@@ -2,11 +2,14 @@ import { SIDEBAR_LINK_PROPS } from "../../..";
 
 export const SIDEBAR_LINK: SIDEBAR_LINK_PROPS[] = [
   { HOME: "/" },
-  { MINISTERS: "/ministers" },
-  // { "HOTEL RESERVATION": "/hotel_Reservation" },
-  { "INFO DESK": "/info/faq" },
-  { TESTIMONIES: "/testimonies" },
+  { ABOUT: "#about" },
+  { MINISTERS: "#speakers" },
+  { VENUE: "#venue" },
+  { HOTELS: "#hotels" },
+  { SPONSORS: "#sponsors" },
+  { CONTACT: "#contact" },
   { "LIVE BROADCAST": "/broadcast" },
+  { REGISTER: "/register" },
 ];
 
 export const SUB_LINK = {

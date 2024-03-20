@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { SIDEBAR_LINK } from "./all";
 import { SideBarNavProps } from "../../..";
 
@@ -20,8 +19,8 @@ export const SideBarNav: React.FC<SideBarNavProps> = ({ style, scrolled }) => {
               key={key}
             >
               {key !== "hasChild" ? (
-                <Link
-                  to={`${value}`}
+                <a
+                  href={`${value}`}
                   className={`${scrolled ? "text-black" : "text-black"}`}
                 >
                   <span
@@ -30,7 +29,7 @@ export const SideBarNav: React.FC<SideBarNavProps> = ({ style, scrolled }) => {
                   >
                     {key}
                   </span>
-                </Link>
+                </a>
               ) : (
                 <span className="cursor-pointer md:hidden">icon</span>
               )}
