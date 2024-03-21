@@ -2,12 +2,12 @@ import { SIDEBAR_LINK_PROPS } from "../../..";
 
 export const SIDEBAR_LINK: SIDEBAR_LINK_PROPS[] = [
   { HOME: "/" },
-  { ABOUT: "#about" },
-  { MINISTERS: "#speakers" },
-  { VENUE: "#venue" },
-  { HOTELS: "#hotels" },
-  { SPONSORS: "#sponsors" },
-  { CONTACT: "#contact" },
+  { ABOUT: "/#about" },
+  { MINISTERS: "/#speakers" },
+  { VENUE: "/#venue" },
+  { TESTIMONIES: "/testimony" },
+  { SPONSORS: "/#sponsors" },
+  { CONTACT: "/#contact" },
   { "LIVE BROADCAST": "/broadcast" },
   { REGISTER: "/register" },
 ];

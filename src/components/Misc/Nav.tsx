@@ -15,7 +15,7 @@ export const SideBarNav: React.FC<SideBarNavProps> = ({ style, scrolled }) => {
         <ul className={`${style}`} key={index}>
           {Object.entries(item).map(([key, value]) => (
             <div
-              className="flex items-center justify-between px-4 py-4 hover:bg-gray-200"
+              className="flex items-center justify-between px-3 py-4 hover:bg-gray-200"
               key={key}
             >
               {key !== "hasChild" ? (

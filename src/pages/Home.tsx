@@ -14,8 +14,7 @@ export default function Home() {
           <h1 className="mb-4 pb-0">
             The Annual
             <br />
-            <span className="font-bold">MIM</span> Conference{" "}
-            <span className="block font-bold">2024</span>
+            <span className="">MIM</span> Conference <span className='block  font-bold'>2024</span>
           </h1>
           <p className="mb-4 pb-0">
             10-12 December, Downtown Conference Center, New York
@@ -680,7 +679,7 @@ export default function Home() {
               <div className="col-lg-6 venue-map">
                 <iframe
                   title="Event Venue Map"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0842296332235!2d3.343004200000012!3d6.636461499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93e158cda5e3%3A0xd4638ae37f33db3!2s3a%20Ajayi%20Rd%2C%20Ogba%2C%20Lagos%20101232%2C%20Lagos!5e0!3m2!1sen!2sng!4v1710971783746!5m2!1sen!2sng"
                   width="1000"
                   height="500"
                   frameBorder="0"
@@ -707,7 +706,7 @@ export default function Home() {
         {/* <!--==========================
       Hotels Section
     ============================--> */}
-        <section id="hotels" className="section-with-bg wow fadeInUp">
+        {/* <section id="hotels" className="section-with-bg wow fadeInUp">
           <div className="container">
             <div className="section-header">
               <h2>Hotels</h2>
@@ -784,7 +783,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* 
     <!--==========================

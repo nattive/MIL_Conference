@@ -7,6 +7,7 @@ import Home from "../pages/Home.tsx";
 import Speaker from "../pages/Speaker.tsx";
 import Broadcast from "../pages/Broadcast.tsx";
 import Register from "../pages/Auths/Register.tsx";
+import Testimony from "../pages/Testimony.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/broadcast",
         element: <Broadcast />,
+      },
+      {
+        path: "/testimony",
+        element: <Testimony />,
       },
       {
         path: "/register",
