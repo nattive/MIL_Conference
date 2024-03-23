@@ -3,7 +3,7 @@ import { SIDEBAR_LINK_PROPS } from "../../..";
 export const SIDEBAR_LINK: SIDEBAR_LINK_PROPS[] = [
   { HOME: "/" },
   { ABOUT: "/#about" },
-  { MINISTERS: "/#speakers" },
+  { MINISTERS: "/ministers" },
   { VENUE: "/#venue" },
   { TESTIMONIES: "/testimony" },
   { SPONSORS: "/#sponsors" },

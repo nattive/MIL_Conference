@@ -14,10 +14,11 @@ export default function Home() {
           <h1 className="mb-4 pb-0">
             The Annual
             <br />
-            <span className="">MIM</span> Conference <span className='block  font-bold'>2024</span>
+            <span className="">MIM</span> Conference{" "}
+            <span className="block  font-bold">2024</span>
           </h1>
           <p className="mb-4 pb-0">
-            10-12 December, Downtown Conference Center, New York
+            15TH - 19TH May, Glory House, 3 Ayayi Road, OKE-IRA, OGBA-LAGOS
           </p>
           <a
             href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
@@ -49,14 +50,14 @@ export default function Home() {
               </div>
               <div className="col-lg-3">
                 <h3>Where</h3>
-                <p>Downtown Conference Center, New York</p>
+                <p>Glory House, 3 Ayayi Road, OKE-IRA, OGBA-LAGOS</p>
               </div>
               <div className="col-lg-3">
                 <h3>When</h3>
                 <p>
-                  Monday to Wednesday
+                  Monday to Friday
                   <br />
-                  10-12 December
+                  15TH - 19TH May
                 </p>
               </div>
             </div>
@@ -64,193 +65,7 @@ export default function Home() {
         </section>
 
         {/* <!--==========================
-      Speakers Section
-    ============================--> */}
-        <section id="speakers" className="wow fadeInUp">
-          <div className="container">
-            <div className="section-header">
-              <h2>Event Speakers</h2>
-              <p>Here are some of our speakers</p>
-            </div>
-
-            <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div className="speaker">
-                  <img
-                    src="img/speakers/1.jpg"
-                    alt="Speaker 1"
-                    className="img-fluid"
-                  />
-                  <div className="details">
-                    <h3>
-                      <a href="/speaker">Brenden Legros</a>
-                    </h3>
-                    <p>Quas alias incidunt</p>
-                    <div className="social">
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="speaker">
-                  <img
-                    src="img/speakers/2.jpg"
-                    alt="Speaker 2"
-                    className="img-fluid"
-                  />
-                  <div className="details">
-                    <h3>
-                      <a href="/speaker">Hubert Hirthe</a>
-                    </h3>
-                    <p>Consequuntur odio aut</p>
-                    <div className="social">
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="speaker">
-                  <img
-                    src="img/speakers/3.jpg"
-                    alt="Speaker 3"
-                    className="img-fluid"
-                  />
-                  <div className="details">
-                    <h3>
-                      <a href="speaker-details.html">Cole Emmerich</a>
-                    </h3>
-                    <p>Fugiat laborum et</p>
-                    <div className="social">
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="speaker">
-                  <img
-                    src="img/speakers/4.jpg"
-                    alt="Speaker 4"
-                    className="img-fluid"
-                  />
-                  <div className="details">
-                    <h3>
-                      <a href="/speaker">Jack Christiansen</a>
-                    </h3>
-                    <p>Debitis iure vero</p>
-                    <div className="social">
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="speaker">
-                  <img
-                    src="img/speakers/5.jpg"
-                    alt="Speaker 5"
-                    className="img-fluid"
-                  />
-                  <div className="details">
-                    <h3>
-                      <a href="/speaker">Alejandrin Littel</a>
-                    </h3>
-                    <p>Qui molestiae natus</p>
-                    <div className="social">
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="speaker">
-                  <img
-                    src="img/speakers/6.jpg"
-                    alt="Speaker 6"
-                    className="img-fluid"
-                  />
-                  <div className="details">
-                    <h3>
-                      <a href="/speaker">Willow Trantow</a>
-                    </h3>
-                    <p>Non autem dicta</p>
-                    <div className="social">
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+   
         {/* 
     <!--==========================
       Schedule Section
@@ -689,7 +504,7 @@ export default function Home() {
               <div className="col-lg-6 venue-info">
                 <div className="row justify-content-center">
                   <div className="col-11 col-lg-8">
-                    <h3>Downtown Conference Center, New York</h3>
+                    <h3>Glory House, 3 Ayayi Road, OKE-IRA, OGBA-LAGOS</h3>
                     <p>
                       Iste nobis eum sapiente sunt enim dolores labore
                       accusantium autem. Cumque beatae ipsam. Est quae sit qui
@@ -702,88 +517,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* <!--==========================
-      Hotels Section
-    ============================--> */}
-        {/* <section id="hotels" className="section-with-bg wow fadeInUp">
-          <div className="container">
-            <div className="section-header">
-              <h2>Hotels</h2>
-              <p>Her are some nearby hotels</p>
-            </div>
-
-            <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div className="hotel">
-                  <div className="hotel-img">
-                    <img
-                      src="img/hotels/1.jpg"
-                      alt="Hotel 1"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <h3>
-                    <a href="#">Hotel 1</a>
-                  </h3>
-                  <div className="stars">
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                  </div>
-                  <p>0.4 Mile from the Venue</p>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6">
-                <div className="hotel">
-                  <div className="hotel-img">
-                    <img
-                      src="img/hotels/2.jpg"
-                      alt="Hotel 2"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <h3>
-                    <a href="#">Hotel 2</a>
-                  </h3>
-                  <div className="stars">
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star-half-full"></i>
-                  </div>
-                  <p>0.5 Mile from the Venue</p>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6">
-                <div className="hotel">
-                  <div className="hotel-img">
-                    <img
-                      src="img/hotels/3.jpg"
-                      alt="Hotel 3"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <h3>
-                    <a href="#">Hotel 3</a>
-                  </h3>
-                  <div className="stars">
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                  </div>
-                  <p>0.6 Mile from the Venue</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
 
         {/* 
     <!--==========================

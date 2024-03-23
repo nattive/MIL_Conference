@@ -8,7 +8,7 @@ const Speaker: React.FC = () => {
         <section id="speakers-details" className="wow fadeIn">
           <div className="container">
             <a
-              href="/#speakers"
+              href="/ministers"
               className="text-black mb-8 flex  items-center  space-x-2 group hover:shadow-md bg-white border border-gray-500 rounded-md w-fit px-2 py-1 hover:text-black "
             >
               <BsArrowReturnLeft className="group-hover:font-bold" />
