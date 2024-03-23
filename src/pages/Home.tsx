@@ -2,26 +2,38 @@ import Header from "../components/Misc/Header";
 import Footer from "../components/Footer/Footer";
 import { motion } from "framer-motion";
 
+const containerVariants = {
+  initial: {
+    y: -50,
+    opacity: 0,
+  },
+
+  animate: {
+    y: 0,
+    opacity: 1,
+
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+      // dalay: 2,
+      duration: 2,
+      type: "spring",
+      stiffness: 260,
+      damping: 20,
+    },
+  },
+};
+
 export default function Home() {
   return (
     <>
       <Header ShowHeader={true} />
-      {/* 
-  <!--==========================
-    Intro Section
-  ============================--> */}
       <section id="intro">
         <div className="intro-container wow fadeIn">
           <motion.h1
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{
-              dalay: 2,
-              duration: 2,
-              type: "spring",
-              stiffness: 260,
-              damping: 20,
-            }}
+            variants={containerVariants}
+            initial="initial"
+            animate="animate"
             className="mb-4 pb-0"
           >
             The Annual
