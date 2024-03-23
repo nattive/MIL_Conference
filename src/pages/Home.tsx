@@ -1,5 +1,6 @@
 import Header from "../components/Misc/Header";
 import Footer from "../components/Footer/Footer";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -11,12 +12,23 @@ export default function Home() {
   ============================--> */}
       <section id="intro">
         <div className="intro-container wow fadeIn">
-          <h1 className="mb-4 pb-0">
+          <motion.h1
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              dalay: 2,
+              duration: 2,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}
+            className="mb-4 pb-0"
+          >
             The Annual
             <br />
             <span className="">MIM</span> Conference{" "}
             <span className="block  font-bold">2024</span>
-          </h1>
+          </motion.h1>
           <p className="mb-4 pb-0">
             15TH - 19TH May, Glory House, 3 Ayayi Road, OKE-IRA, OGBA-LAGOS
           </p>
