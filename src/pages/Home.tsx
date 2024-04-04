@@ -36,15 +36,15 @@ export default function Home() {
             animate="animate"
             className="mb-4 pb-0"
           >
-            The Annual
+            Welcome to
             <br />
             <span className="">MIM</span> Conference{" "}
             <span className="block  font-bold">2024</span>
           </motion.h1>
           <p className="mb-4 pb-0">
-            15TH - 19TH May, Glory House, 3 Ayayi Road, OKE-IRA, OGBA-LAGOS
+            15TH - 19TH May, 2024
           </p>
-          <a
+          {/* <a
             href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
             className="venobox play-btn mb-4"
             data-vbtype="video"
@@ -52,7 +52,7 @@ export default function Home() {
           ></a>
           <a href="#about" className="about-btn scrollto">
             About The Event
-          </a>
+          </a> */}
         </div>
       </section>
 
@@ -64,7 +64,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
-                <h2>About The Event</h2>
+                <h2>About The Conference</h2>
                 <p>
                   Sed nam ut dolor qui repellendus iusto odit. Possimus
                   inventore eveniet accusamus error amet eius aut accusantium
@@ -94,10 +94,64 @@ export default function Home() {
     <!--==========================
       Schedule Section
     ============================--> */}
+        <section className="section-with-bg py-5">
+          <div className="container mx-auto my-5 wow fadeInUp">
+            <div className="row my-5">
+              <div className="col-xs-12 col-md-6">
+                <iframe width="560" height="501" src="https://www.youtube.com/embed/S0ahaKWVnTQ?si=byic87pI34VybxJD" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              </div>
+              <div className="col-xs-12 col-md-6 my-auto">
+                <h3>#MIM2024</h3>
+                <p>
+                  Nigeria hosts some of the largest and most powerful ministries in the world today. This did not happen by chance. It is the product of definite seeds that were sown in the country at a specific period of time in our nation’s history. Indeed, the Bible speaks about a time to plant and a time to reap that which is planted. There was a planting season when a belief system founded upon the knowledge of certain truths within the Scriptures was established.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <!--==========================
+      Venue Section
+    ============================--> */}
+        <section id="venue" className="wow fadeInUp">
+          <div className="container-fluid">
+            <div className="section-header">
+              <h2> Conference
+                Venue</h2>
+            </div>
+
+            <div className="row no-gutters">
+              <div className="col-lg-6 venue-map">
+                <iframe
+                  title="Event Venue Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0842296332235!2d3.343004200000012!3d6.636461499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93e158cda5e3%3A0xd4638ae37f33db3!2s3a%20Ajayi%20Rd%2C%20Ogba%2C%20Lagos%20101232%2C%20Lagos!5e0!3m2!1sen!2sng!4v1710971783746!5m2!1sen!2sng"
+                  width="1000"
+                  height="500"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="col-lg-6 venue-info">
+                <div className="row justify-content-center">
+                  <div className="col-11 col-lg-8">
+                    <h3>Glory House, 3 Ayayi Road, OKE-IRA, OGBA-LAGOS</h3>
+                    <p>
+                      Iste nobis eum sapiente sunt enim dolores labore
+                      accusantium autem. Cumque beatae ipsam. Est quae sit qui
+                      voluptatem corporis velit. Qui maxime accusamus possimus.
+                      Consequatur sequi et ea suscipit enim nesciunt quia velit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="schedule" className="section-with-bg">
           <div className="container wow fadeInUp">
             <div className="section-header">
-              <h2>Event Schedule</h2>
+              <h2>Conference Schedule</h2>
               <p>Here is our event schedule</p>
             </div>
 
@@ -503,111 +557,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* <!--==========================
-      Venue Section
-    ============================--> */}
-        <section id="venue" className="wow fadeInUp">
-          <div className="container-fluid">
-            <div className="section-header">
-              <h2>Event Venue</h2>
-              <p>Event venue location info and gallery</p>
-            </div>
-
-            <div className="row no-gutters">
-              <div className="col-lg-6 venue-map">
-                <iframe
-                  title="Event Venue Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0842296332235!2d3.343004200000012!3d6.636461499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93e158cda5e3%3A0xd4638ae37f33db3!2s3a%20Ajayi%20Rd%2C%20Ogba%2C%20Lagos%20101232%2C%20Lagos!5e0!3m2!1sen!2sng!4v1710971783746!5m2!1sen!2sng"
-                  width="1000"
-                  height="500"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="col-lg-6 venue-info">
-                <div className="row justify-content-center">
-                  <div className="col-11 col-lg-8">
-                    <h3>Glory House, 3 Ayayi Road, OKE-IRA, OGBA-LAGOS</h3>
-                    <p>
-                      Iste nobis eum sapiente sunt enim dolores labore
-                      accusantium autem. Cumque beatae ipsam. Est quae sit qui
-                      voluptatem corporis velit. Qui maxime accusamus possimus.
-                      Consequatur sequi et ea suscipit enim nesciunt quia velit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 
-    <!--==========================
-      Sponsors Section
-    ============================--> */}
-        <section id="sponsors" className="section-with-bg wow fadeInUp">
-          <div className="container">
-            <div className="section-header">
-              <h2>Sponsors</h2>
-            </div>
-
-            <div className="row no-gutters sponsors-wrap clearfix">
-              <div className="col-lg-3 col-md-4 col-xs-6">
-                <div className="sponsor-logo">
-                  <img src="img/sponsors/1.png" className="img-fluid" alt="" />
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4 col-xs-6">
-                <div className="sponsor-logo">
-                  <img src="img/sponsors/2.png" className="img-fluid" alt="" />
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4 col-xs-6">
-                <div className="sponsor-logo">
-                  <img src="img/sponsors/3.png" className="img-fluid" alt="" />
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4 col-xs-6">
-                <div className="sponsor-logo">
-                  <img src="img/sponsors/4.png" className="img-fluid" alt="" />
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4 col-xs-6">
-                <div className="sponsor-logo">
-                  <img src="img/sponsors/5.png" className="img-fluid" alt="" />
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4 col-xs-6">
-                <div className="sponsor-logo">
-                  <img src="img/sponsors/6.png" className="img-fluid" alt="" />
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4 col-xs-6">
-                <div className="sponsor-logo">
-                  <img src="img/sponsors/7.png" className="img-fluid" alt="" />
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4 col-xs-6">
-                <div className="sponsor-logo">
-                  <img src="img/sponsors/8.png" className="img-fluid" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* 
-    <!--==========================
-      F.A.Q Section
-    ============================--> */}
-        <section id="faq" className="wow fadeInUp">
+        {/* <section id="faq" className="wow fadeInUp">
           <div className="container">
             <div className="section-header">
               <h2>F.A.Q </h2>
@@ -745,7 +695,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <!--==========================
       Subscribe Section
@@ -753,132 +703,66 @@ export default function Home() {
         <section id="subscribe">
           <div className="container wow fadeInUp">
             <div className="section-header">
-              <h2>Newsletter</h2>
-              <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
+              <h2>Meet the speakers</h2>
             </div>
-
-            <form method="POST" action="#">
-              <div className="form-row justify-content-center">
-                <div className="col-auto">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Enter your Email"
+            <div className="row">
+              <div className="col-lg-4 col-md-6">
+                <div className="speaker">
+                  <img
+                    style={{ borderRadius: '10px 20px'}}
+                    src="img/speakers/1.jpg"
+                    alt="Speaker 1"
+                    className="img-fluid rouded"
                   />
-                </div>
-                <div className="col-auto">
-                  <button type="submit">Subscribe</button>
+                  <div className="details">
+                    <h3>
+                      Poju Oyemade
+                    </h3>
+                  </div>
                 </div>
               </div>
-            </form>
+              <div className="col-lg-4 col-md-6">
+                <div className="speaker">
+                  <img
+                    src="img/speakers/2.jpg"
+                    style={{ borderRadius: '10px 20px'}}
+                    alt="Speaker 2"
+                    className="img-fluid"
+                  />
+                  <div className="details">
+                    <h3>
+                      <a href="/speaker">Hubert Hirthe</a>
+                    </h3>
+                    <p>Consequuntur odio aut</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6">
+                <div className="speaker">
+                  <img
+                    src="img/speakers/3.jpg"
+                    style={{ borderRadius: '10px 20px'}}
+                    alt="Speaker 3"
+                    className="img-fluid"
+                  />
+                  <div className="details">
+                    <h3>
+                      <a href="speaker-details.html">Cole Emmerich</a>
+                    </h3>
+                    <p>Fugiat laborum et</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
 
         {/* contact section */}
 
-        <section id="contact" className="section-bg wow fadeInUp">
-          <div className="container">
-            <div className="section-header">
-              <h2>Contact Us</h2>
-              <p>Nihil officia ut sint molestiae tenetur.</p>
-            </div>
-
-            <div className="row contact-info">
-              <div className="col-md-4">
-                <div className="contact-address">
-                  <i className="ion-ios-location-outline"></i>
-                  <h3>Address</h3>
-                  <address>A108 Adam Street, NY 535022, USA</address>
-                </div>
-              </div>
-
-              <div className="col-md-4">
-                <div className="contact-phone">
-                  <i className="ion-ios-telephone-outline"></i>
-                  <h3>Phone Number</h3>
-                  <p>
-                    <a href="tel:+155895548855">+1 5589 55488 55</a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-4">
-                <div className="contact-email">
-                  <i className="ion-ios-email-outline"></i>
-                  <h3>Email</h3>
-                  <p>
-                    <a href="mailto:info@example.com">info@example.com</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form
-                action="#"
-                method="post"
-                role="form"
-                className="contactForm"
-              >
-                <div className="form-row">
-                  <div className="form-group col-md-6">
-                    <input
-                      type="text"
-                      name="name"
-                      className="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                      data-rule="minlen:4"
-                      data-msg="Please enter at least 4 chars"
-                    />
-                    <div className="validation"></div>
-                  </div>
-                  <div className="form-group col-md-6">
-                    <input
-                      type="email"
-                      className="form-control"
-                      name="email"
-                      id="email"
-                      placeholder="Your Email"
-                      data-rule="email"
-                      data-msg="Please enter a valid email"
-                    />
-                    <div className="validation"></div>
-                  </div>
-                </div>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 8 chars of subject"
-                  />
-                  <div className="validation"></div>
-                </div>
-                <div className="form-group">
-                  <textarea
-                    className="form-control"
-                    name="message"
-                    rows={5}
-                    data-rule="required"
-                    data-msg="Please write something for us"
-                    placeholder="Message"
-                  ></textarea>
-                  <div className="validation"></div>
-                </div>
-                <div className="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-
+      
         <Footer />
       </main>
     </>
