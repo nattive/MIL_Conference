@@ -2,7 +2,7 @@ import React from "react";
 import { useRegisterEvent } from "../../api/hook";
 
 const RegisterForm: React.FC = () => {
-const {mutate, isPending} = useRegisterEvent()
+const {mutate} = useRegisterEvent()
 
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
