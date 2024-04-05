@@ -519,6 +519,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Intro Section
 --------------------------------------------------------------*/
 
+.header-title{
+  height: 300px;
+  background: url(../img/mim-flyer.jpeg) top center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
 #intro {
   width: 100%;
   height: 100vh;
@@ -528,6 +536,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
+/* .header-title, */
 #intro:before {
   content: "";
   background: rgba(6, 12, 34, 0.8);

@@ -1,86 +1,63 @@
-import { Field, Form, Formik } from "formik";
-import React, { useContext, useEffect, useState } from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
-import { ProgressTrackerContext } from "../context/ProgresTrackerContext";
-import { RegisterProps } from "../../../index.ts";
+import React from "react";
+import { useRegisterEvent } from "../../api/hook";
 
 const RegisterForm: React.FC = () => {
-  const [userData, setUserData] = useState<RegisterProps>({
-    name: "",
-    email: "",
-    gender: "",
-  });
+const {mutate, isPending} = useRegisterEvent()
 
-  //   const validate = (values) => {
-  //     const errors = {};
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const data: {
+      name?: string
+      email?: string
+      gender?: string
+      mobileNumber?: string
+    } = {};
+    // @ts-ignore
+    data.name = event.target.elements.name.value;
+    // @ts-ignore
+    data.email = event.target.elements.email.value;
+    // @ts-ignore
+    data.gender = event.target.elements.gender.value;
+    // @ts-ignore
+    data.mobileNumber = event.target.elements.mobileNumber.value;
+    
+    mutate(data);
+    
 
-  //     if (!values.name) {
-  //       errors.name = "Required";
-  //     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.name)) {
-  //       errors.name = "Invalid email address";
-  //     }
-
-  //     if (!values.email) {
-  //       errors.email = "Required";
-  //     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-  //       errors.email = "Invalid email address";
-  //     }
-
-  //     return errors;
-  //   };
-
-  const {
-    registerReady,
-    // completeDownload,
-    setRegisterReady,
-    // setCompleteDownload,
-  } = useContext(ProgressTrackerContext);
-
-  useEffect(() => {
-    if (!registerReady && setRegisterReady) {
-      setRegisterReady(false);
-    }
-  }, [registerReady, setRegisterReady]);
-
-  const onSubmit = (values: RegisterProps) => {
-    console.log(values);
-    setUserData(values);
-    if (setRegisterReady) {
-      setRegisterReady(true);
-    }
   };
   return (
     <>
       {/* form */}
-      <div className="  md:mt-5 mb-5 px-2 md:px-0">
-        <Formik
-          initialValues={userData}
-          //   validate={validate}
-          onSubmit={(values) => {
-            onSubmit(values);
-          }}
-        >
-          {() => (
-            <Form
-              method="post"
-              className=" bg-white col-xs-12 col-md-7 px-4 pt-8 pb-4 md:w-[80%] mx-auto shadow-2xl rounded-md"
-            >
-              <section id="contact" className="section-bg wow fadeInUp">
-                <div className="container">
-                  <div className="form">
-                    <div id="sendmessage">Your message has been sent. Thank you!</div>
-                    <div id="errormessage"></div>
-                    <form
-                      action="#"
-                      method="post"
-                      role="form"
-                      className="contactForm"
-                    >
-                      <div className="form-row">
-                        <div className="form-group col-md-6">
+      <main id="main" className="main-page">
+        <div className="header-title">
+
+        </div>
+        <section id="speakers-details" className="wow fadeIn">
+          <div className="container">
+
+
+            <div className="row w-full">
+              <div className="col-xs-12 my-auto col-md-6">
+                <div className="section-header">
+                  <h2>Register</h2>
+                  <p>Register for the conference.</p>
+                </div>
+              </div>
+              <div className="col-xs-12 col-md-6">
+                <form
+                  onSubmit={onSubmit}
+                  className=" bg-white col-xs-12   px-4 pt-8 pb-4 mx-auto  rounded-md"
+                >
+                  <section id="contact" className="section-bg wow fadeInUp">
+                    <div className="form">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+ 
+                        <div className="form-group col-md-12">
                           <input
                             type="text"
                             name="name"
+                            required
                             className="form-control"
                             id="name"
                             placeholder="Your Name"
@@ -89,9 +66,10 @@ const RegisterForm: React.FC = () => {
                           />
                           <div className="validation"></div>
                         </div>
-                        <div className="form-group col-md-6">
+                        <div className="form-group col-md-12">
                           <input
                             type="email"
+                            required
                             className="form-control"
                             name="email"
                             id="email"
@@ -100,35 +78,43 @@ const RegisterForm: React.FC = () => {
                             data-msg="Please enter a valid email"
                           />
                           <div className="validation"></div>
-                        </div>
-                      </div>
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="subject"
-                          id="subject"
-                          placeholder="Subject"
-                          data-rule="minlen:4"
-                          data-msg="Please enter at least 8 chars of subject"
-                        />
+                        </div> 
+                        <div className="form-group col-md-12">
+                          <input 
+                            required
+                            className="form-control"
+                            name="mobileNumber"
+                            id="mobileNumber"
+                            placeholder="Your Phone number"
+                            data-rule="email"
+                            data-msg="Please enter a valid phone number"
+                          />
+                          <div className="validation"></div>
+                        </div> 
+                      <div className="form-group col-md-12">
+                        <select
+                          required
+                          name="gender" id="" className="form-control">
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>
                         <div className="validation"></div>
                       </div>
-                     
+
                       <div className="text-center">
                         <button type="submit">Send Message</button>
                       </div>
-                    </form>
-                  </div>
-                </div>
-              </section>
+                    </div>
+                  </section>
 
 
-              
-            </Form>
-          )}
-        </Formik>
-      </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </>
   );
 };
