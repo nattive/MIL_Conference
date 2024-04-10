@@ -1,6 +1,7 @@
 import { useMutation } from "@tanstack/react-query"
 import { registerEvent } from "./api"
 import { toast } from "react-toastify"
+import { AxiosError } from "axios"
 
 export const useRegisterEvent = () => {
     return useMutation({
@@ -9,8 +10,8 @@ export const useRegisterEvent = () => {
         onSuccess: () => {
             toast('Event registered', { type: 'success' })
         },
-        onError: (error) => {
-            toast(error?.message || 'An error occurred', { type: 'error' })
+        onError: (error: AxiosError<any>) => {
+            toast(error?.response?.data?.message || 'An error occurred', { type: 'error' })
         }
     })
 }

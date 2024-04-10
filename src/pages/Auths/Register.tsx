@@ -20,6 +20,13 @@ const Register: React.FC = () => {
       {/* form */}
 
       {!registerReady ? <RegisterForm /> : <QRDownload />}
+
+      {/* <Outlet /> */}
+     {/* TODO:
+      do a nested route that contains the register form and the qr form page
+      qr form page will display information return from the api (check api type)
+       
+     */}
     </>
   );
 };

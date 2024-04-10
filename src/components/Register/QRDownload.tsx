@@ -24,7 +24,7 @@ const QRDownload: React.FC = () => {
   };
   return (
     <>
-      <section className="px-3 md:px-0">
+      <section className="px-3 md:px-0 m-auto">
         <div className="bg-white px-4 pt-8 pb-4 md:w-[30%] mx-auto shadow-2xl rounded-md relative">
           <div className="QRCode h-[200px] flex justify-center items-center">
             <Loading />

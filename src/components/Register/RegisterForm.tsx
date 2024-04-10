@@ -7,13 +7,13 @@ const {mutate} = useRegisterEvent()
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const data: {
-      name?: string
+      fullName?: string
       email?: string
       gender?: string
       mobileNumber?: string
     } = {};
     // @ts-ignore
-    data.name = event.target.elements.name.value;
+    data.fullName = event.target.elements.name.value;
     // @ts-ignore
     data.email = event.target.elements.email.value;
     // @ts-ignore
