@@ -3,7 +3,6 @@ import { registerEvent } from "./api"
 import { toast } from "react-toastify"
 import { AxiosError } from "axios"
 
-
 export const useRegisterEvent = () => {
     return useMutation({
         mutationKey: ['registerEvent'],
